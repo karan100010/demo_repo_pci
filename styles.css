@@ -1,0 +1,748 @@
+@media screen and (min-width:740px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-item {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .navbar {
+        justify-content: center;
+    }
+
+    #button_container {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .latest-container {
+        margin-right: 0;
+    }
+
+    .trending-container {
+        margin-left: 0;
+    }
+
+    .video-section {
+        flex: 0 0 100%;
+        margin: 10px 0;
+    }
+
+    #modeSwitch {
+        right: 8px;
+    }
+
+    #languageSwitch {
+        right: 64px;
+    }
+
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #fcfcfc;
+        color: #333;
+    }
+    
+    
+    
+    .flex {
+        display: flex;
+    }
+    
+    .items-center {
+        align-items: center;
+    }
+    
+    .navbar-brand img {
+        max-width: 100%;
+        height: auto;
+        max-height: 100px;
+    }
+    
+    .header {
+        background-color: #fcfcfc;
+        padding: 0px 0;
+        color: white;
+    }
+    
+    .logo img {
+        width: 110px;
+        height: 100px;
+        margin-left: 1%;
+    }
+    
+    .navbar {
+        display: flex;
+        justify-content: flex-end;
+    }
+    
+    .nav {
+        list-style: none;
+        display: flex;
+        margin: 0;
+        padding: 0;
+        background-color: #555;
+    }
+    
+    .nav-item {
+        margin-right: 20px;
+    }
+    
+    .nav-link {
+        text-decoration: none;
+        color: #FAF1CF;
+        font-size: 18px;
+        transition: color 0.3s ease-in-out;
+    }
+    
+    
+    
+    .nav-link:hover {
+        color: #e31e1e;
+    }
+    
+    .container {
+        max-width: 1200px;
+        margin: 10 auto;
+    }
+    
+    #button_container {
+        margin-left: 280px;
+        padding: 15px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 1rem;
+        color: rgb(190, 39, 39);
+        transition: background-color 0.3s ease;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+    }
+    
+    .gallery-buttons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+    }
+    
+    .btn {
+        margin-right: 20px;
+        padding: 15px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 1rem;
+        color: #fcfcfc;
+        background-color: #4CAF50;
+        transition: background-color 0.3s ease;
+        border-bottom: 3px solid #FE3A4A;
+    }
+    
+    .btn1 {
+        margin-right: 20px;
+        padding: 15px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 1rem;
+        color: #fcfcfc;
+        background-color: #4CAF50;
+        transition: background-color 0.3s ease;
+        border-bottom: 3px solid #FE3A4A;
+    }
+    
+    
+    .button_container a{
+        text-decoration: none;
+        color: inherit;
+    }
+    
+    
+    .btn:hover {
+        background-color: #e83b3b;
+        color: rgb(255, 255, 255);
+    }
+    
+    
+    .latest-container {
+        display: flex;
+        justify-content: left;
+        flex-wrap: wrap;
+        margin-right: 40%;
+        margin-top: 2rem;
+        height: 410px;
+    }   
+    
+    .trending-container {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin-left: -2%;
+        position: absolute;
+        top: 13cap;
+        width: 135%;
+    }
+    
+    
+    .flex-wrep{
+        flex-wrap: wrap;
+    }
+    
+    /* video-section-1 */
+    
+    .video-section-1 {
+        flex: 0 0 calc(50% - 20px);
+        margin: 10px;
+        border: 2px solid;
+        border-radius: 8px;
+        overflow: hidden;
+        position: relative;
+        cursor: pointer;
+        transition: transform 0.3s ease;
+    }
+    
+    .video-section-1:hover {
+        transform: scale(1.05);
+    }
+    
+    .video-section-1 iframe {
+        width: 100%;
+        /* margin-left: 250px; */
+        height: 200px;
+        object-fit: cover;
+    }
+    
+    .video-section-1 h2 {
+        margin: 0;
+        padding: 10px;
+        background-color: #056d02;
+        color: white;
+        border-bottom: 2px solid #e71010;
+        border-radius: 8px 8px 0 0;
+    }
+    
+
+    /* video-section-2 */
+
+    .video-section-2 {
+        flex: 0 0 calc(50% - 20px);
+        margin: 10px;
+        border: 2px solid;
+        border-radius: 8px;
+        overflow: hidden;
+        position: relative;
+        cursor: pointer;
+        transition: transform 0.3s ease;
+    }
+    
+    .video-section-2:hover {
+        transform: scale(1.05);
+    }
+    
+    .video-section-2 iframe {
+        width: 100%;
+        /* margin-left: 250px; */
+        height: 20.5rem;
+        object-fit: cover;
+    }
+    
+    .video-section-2 h2 {
+        margin: 0;
+        padding: 10px;
+        background-color: #056d02;
+        color: white;
+        border-bottom: 2px solid #e71010;
+        border-radius: 8px 8px 0 0;
+    }
+
+
+
+
+    .gallery-buttons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+    }
+    
+    .gallery-button {
+        margin-right: 20px;
+        padding: 15px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 1rem;
+        color: white;
+        background-color: #555;
+        transition: background-color 0.3s ease;
+        border-bottom: 2px solid #e83b3b;
+    }
+    
+    .gallery-button a {
+        text-decoration: none;
+        color: inherit;
+    }
+    
+    .gallery-button:hover {
+        background-color: #e31e1e;
+    }
+    
+    
+    
+    /* for javascript */
+    
+    /* Add this to your existing CSS code */
+    
+    .dark-mode {
+        background-color: #333;
+        color: #fff;
+    }
+    
+    .dark-mode .header {
+        background-color: #111;
+    }
+    
+    .dark-mode .nav-link {
+        color: #fff;
+    }
+    
+    .dark-mode .btn {
+        background-color: #555;
+        color: #fff;
+    }
+    
+    .dark-mode .btn:hover {
+        background-color: #777;
+    }
+    
+    #modeSwitch {
+        position: absolute;
+        top: 8px;
+        right: -12px;
+        background: fixed;
+    }
+    
+    
+    /* Add this style for the language switch button */
+    #languageSwitch {
+        position: absolute;
+        top: 8px;
+        right: 40px;
+        background: fixed;
+    }
+
+    #relatedAppLink {
+        position: absolute;
+        top: 2rem;
+        right: 10rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width:360px) and (max-width:740px){
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-item {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .navbar {
+        justify-content: center;
+    }
+
+    #button_container {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .latest-container {
+        margin-right: 0;
+    }
+
+    .trending-container {
+        margin-left: 0;
+    }
+
+    .video-section {
+        flex: 0 0 100%;
+        margin: 10px 0;
+    }
+
+    #modeSwitch {
+        right: 8px;
+    }
+
+    #languageSwitch {
+        right: 64px;
+    }
+
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #fcfcfc;
+        color: #333;
+    }
+    
+    
+    
+    .flex {
+        display: flex;
+    }
+    
+    .items-center {
+        align-items: center;
+    }
+    
+    .navbar-brand img {
+        max-width: 100%;
+        height: auto;
+        max-height: 100px;
+    }
+    
+    .header {
+        background-color: #fcfcfc;
+        padding: 0px 0;
+        color: white;
+    }
+    
+    .logo img {
+        width: 110px;
+        height: 100px;
+        margin-left: 1%;
+    }
+    
+    .navbar {
+        display: flex;
+        justify-content: flex-end;
+    }
+    
+    .nav {
+        list-style: none;
+        display: flex;
+        margin: 0;
+        padding: 0;
+        background-color: #555;
+    }
+    
+    .nav-item {
+        margin-right: 20px;
+    }
+    
+    .nav-link {
+        text-decoration: none;
+        color: #FAF1CF;
+        font-size: 18px;
+        transition: color 0.3s ease-in-out;
+    }
+    
+    
+    
+    .nav-link:hover {
+        color: #e31e1e;
+    }
+    
+    .container {
+        max-width: 740px;
+        margin: 10 auto;
+    }
+    
+    .container-1 {
+        max-width: 740px;
+        margin: 10 auto;
+    }
+
+
+    #button_container {
+        margin-left: 280px;
+        padding: 15px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 1rem;
+        color: rgb(190, 39, 39);
+        transition: background-color 0.3s ease;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 36rem;
+    }
+    
+
+    /* #button_container {
+        color: #fcfcfc;
+        margin-right: 25px;
+    } */
+
+    .button_container a{
+        text-decoration: none;
+        color: inherit;
+    }
+
+
+    .gallery-buttons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+    }
+    
+    .btn1 {
+        margin-right: 20px;
+        padding: 15px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 1rem;
+        color: #fcfcfc;
+        background-color: #4CAF50;
+        transition: background-color 0.3s ease;
+        border-bottom: 3px solid #FE3A4A;
+    }
+    
+
+    .btn {
+        margin-right: 20px;
+        padding: 15px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 1rem;
+        color: #fcfcfc;
+        background-color: #4CAF50;
+        transition: background-color 0.3s ease;
+        border-bottom: 3px solid #FE3A4A;
+    }
+    
+    .btn:hover {
+        background-color: #e83b3b;
+        color: rgb(255, 255, 255);
+    }
+    
+    
+    .latest-container {
+        display: flex;
+        justify-content: left;
+        flex-wrap: wrap;
+        margin-right: -22%;
+        margin-top: 3rem;
+        height: 5px;
+    }   
+    
+    .trending-container {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin-left: 4.5rem;
+        position: absolute;
+        top: 15cap;
+        width: 155%;
+    }
+    
+    
+    .flex-wrep{
+        flex-wrap: wrap;
+    }
+    
+    /* video-section-1 */
+    
+    .video-section-1 {
+        flex: 0 0 calc(50% - 20px);
+        margin: 10px;
+        border: 2px solid;
+        border-radius: 8px;
+        overflow: hidden;
+        position: relative;
+        cursor: pointer;
+        transition: transform 0.3s ease;
+    }
+    
+    .video-section-1:hover {
+        transform: scale(1.05);
+    }
+    
+    .video-section-1 iframe {
+        width: 100%;
+        /* margin-left: 250px; */
+        height: 200px;
+        object-fit: cover;
+    }
+    
+    .video-section-1 h2 {
+        margin: 0;
+        padding: 10px;
+        background-color: #056d02;
+        color: white;
+        border-bottom: 2px solid #e71010;
+        border-radius: 8px 8px 0 0;
+    }
+    
+
+    /* video-section-2 */
+
+    .video-section-2 {
+        flex: 0 0 calc(50% - 20px);
+        margin: 10px;
+        border: 2px solid;
+        border-radius: 8px;
+        overflow: hidden;
+        position: relative;
+        cursor: pointer;
+        transition: transform 0.3s ease;
+    }
+    
+    .video-section-2:hover {
+        transform: scale(1.05);
+    }
+    
+    .video-section-2 iframe {
+        width: 100%;
+        /* margin-left: 250px; */
+        height: 20.5rem;
+        object-fit: cover;
+    }
+    
+    .video-section-2 h2 {
+        margin: 0;
+        padding: 10px;
+        background-color: #056d02;
+        color: white;
+        border-bottom: 2px solid #e71010;
+        border-radius: 8px 8px 0 0;
+    }
+
+
+
+
+    .gallery-buttons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+    }
+    
+    .gallery-button {
+        margin-right: 20px;
+        padding: 15px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 1rem;
+        color: white;
+        background-color: #555;
+        transition: background-color 0.3s ease;
+        border-bottom: 2px solid #e83b3b;
+    }
+    
+    .gallery-button a {
+        text-decoration: none;
+        color: inherit;
+    }
+    
+    .gallery-button:hover {
+        background-color: #e31e1e;
+    }
+    
+    
+    
+    /* for javascript */
+    
+    /* Add this to your existing CSS code */
+    
+    .dark-mode {
+        background-color: #333;
+        color: #fff;
+    }
+    
+    .dark-mode .header {
+        background-color: #111;
+    }
+    
+    .dark-mode .nav-link {
+        color: #fff;
+    }
+    
+    .dark-mode .btn {
+        background-color: #555;
+        color: #fff;
+    }
+    
+    .dark-mode .btn:hover {
+        background-color: #777;
+    }
+    
+    #modeSwitch {
+        position: absolute;
+        top: 8px;
+        right: -9rem;
+        background: fixed;
+    }
+    
+    
+    /* Add this style for the language switch button */
+    #languageSwitch {
+        position: absolute;
+        top: 8px;
+        right: -49px;
+        background: fixed;
+    }
+
+    #relatedAppLink {
+        position: absolute;
+        top: 6rem;
+        right: -9rem;
+    }
+}
+
+form {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+input[type="file"] {
+    display: block;
+    margin-bottom: 15px;
+}
+
+input[type="submit"] {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;

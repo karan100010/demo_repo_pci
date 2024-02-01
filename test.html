@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Session Tracker</title>
+    <script>
+        // Function to create a cookie
+        function createCookie(name, value, days) {
+            var expires = '';
+            if (days) {
+                var date = new Date();
+                date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+                expires = '; expires=' + date.toGMTString();
+            }
+            document.cookie = name + '=' + value + expires + '; path=/';
+        }
+
+        // Function to read a cookie
+        function readCookie(name) {
+            var nameEQ = name + '=';
+            var cookies = document.cookie.split(';');
+            for (var i = 0; i < cookies.length; i++) {
+                var cookie = cookies[i];
+                while (cookie.charAt(0) === ' ')
+                    cookie = cookie.substring(1, cookie.length);
+                if (cookie.indexOf(nameEQ) === 0)
+                    return cookie.substring(nameEQ.length, cookie.length);
+            }
+            return null;
+        }
+
+        // Function to erase a cookie
+        function eraseCookie(name) {
+            createCookie(name, '', -1);
+        }
+
+        // Start the session
+        function startSession() {
+            // Set the session start time
+            createCookie('start_time', new Date().getTime(), 1);
+        }
+
+        // End the session and save data to CSV file
+        function endSession() {// Get the session start time
+var startTime = readCookie('start_time');
+
+// Calculate the session length in seconds
+var endTime = new Date().getTime();
+var sessionLength = (endTime - startTime) / 1000;
+
+// Get the browser information
+var browser = navigator.userAgent;
+
+// Get the button click information
+var buttonClicks = JSON.parse(readCookie('button_clicks'));
+
+// Create the data object to send to the API
+var data = {
+  values: [[sessionLength, browser, buttonClicks.join(';')]]
+};
+
+// Append the data to the Google Sheet
+var sheetId = '<your-sheet-id>'; // replace with the ID of your Google Sheet
+var range = 'Sheet1!A:B'; // replace with the cell range you want to append to
+var accessToken = '<your-access-token>'; // replace with your access token from the API
+$.ajax({
+  method: 'POST',
+  url: 'https://sheets.googleapis.com/v4/spreadsheets/' + sheetId + '/values/' + range + ':append?valueInputOption=USER_ENTERED',
+  headers: {
+    'Authorization': 'Bearer ' + accessToken
+  },
+  data: JSON.stringify(data),
+  contentType: 'application/json',
+  success: function(response) {
+    console.log(response);
+  },
+  error: function(xhr, status, error) {
+    console.error(xhr.responseText);
+  }
+});
+
+// Clean up session-related cookies
+eraseCookie('start_time');
+eraseCookie('button_clicks');
+        }
+   
+
+        // Track button clicks
+        function trackButtonClick(buttonName) {
+            var buttonClicks = JSON.parse(readCookie('button_clicks')) || [];
+            buttonClicks.push(buttonName);
+            createCookie('button_clicks', JSON.stringify(buttonClicks), 1);
+        }
+
+        // End the session when the browser is closed
+        window.addEventListener('beforeunload', function(event) {
+            alert("Leave page?")
+            endSession();
+        });
+    </script>
+</head>
+<body>
+    <h1>Session Tracker</h1>
+
+    <p>Click the buttons below to track button clicks:</p>
+    <button onclick="trackButtonClick('Button 1')">Button </button>
+    <button onclick="endSession()"> end session</button>
+
+

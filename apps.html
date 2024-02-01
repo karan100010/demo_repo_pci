@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap.min.css">
+
+    <!-- External CSS file -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- External JS files -->
+    <script src="jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+<title>Multiple Applications</title>
+<style>
+    /* CSS styles */
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f3f3f3;
+    }
+    .container-1 {
+        background-color: #555;
+        border-radius: 8px;
+        box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        margin: 20px auto;
+        padding: 20px;
+        width: 80%;
+        max-width: 600px;
+        transition: transform 0.3s ease;
+        display: flex;
+        flex-direction: row;
+        align-items: center; /* Align items vertically */
+    }
+    .container-1:hover {
+        transform: translateY(-5px);
+    }
+    h2 {
+        color: #333;
+        margin-top: 0;
+    }
+    p {
+        color: #666;
+    }
+    .store-link {
+        margin-left: auto; /* Pushes store link to the right */
+    }
+    .store-link a {
+        display: inline-block;
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+    }
+    .store-link a:hover {
+        background-color: #45a049;
+    }
+    .app-image {
+        margin-right: 20px; /* Add spacing between image and content */
+    }
+    .app-image img {
+        max-width: 100px; /* Limit image width */
+        border-radius: 8px;
+    }
+</style>
+</head>
+<body>
+
+
+    <header class="header">
+        <div class="container">
+            <a class="navbar-brand logo" href="#">
+                <img src="logo.jpg" width="500" height="500" alt="Gramrite Logo">
+            </a>
+            <button id="modeSwitch" class="btn"><img src="brightness.png" width="40" height="37"></button>
+            <button id="languageSwitch" class="btn"><img src="languages.png" width="40" height="37"></button>
+        </div>
+    </header>
+
+<div class="container-1">
+    <div class="app-image">
+        <img src="Briar.jpeg" alt="Application 1 Image">
+    </div>
+    <div>
+        <h2>Briar</h2>
+        <!-- <p>This is the content of application 1.</p> -->
+        <div class="store-link">
+            <a href="https://play.google.com/store/apps/details?id=org.briarproject.briar.android">Download on Google Play</a>
+        </div>
+    </div>
+</div>
+
+<div class="container-1">
+    <div class="app-image">
+        <img src="Talkie.jpeg" alt="Application 2 Image">
+    </div>
+    <div>
+        <h2>Talkie</h2>
+        <!-- <p>This is the content of application 2.</p> -->
+        <div class="store-link">
+            <a href="https://play.google.com/store/apps/details?id=com.remaller.android.wifitalkie_lite">Download on Google Play</a>
+        </div>
+    </div>
+</div>
+
+<div class="container-1">
+    <div class="app-image">
+        <img src="voxer.png" alt="Application 3 Image">
+    </div>
+    <div>
+        <h2>Voxer</h2>
+        <!-- <p>This is the content of application 3.</p> -->
+        <div class="store-link">
+            <a href="https://play.google.com/store/apps/details?id=com.rebelvox.voxer">Download on Google Play</a>
+        </div>
+    </div>
+</div>
+
+<script>
+    // Dark/Light Mode Switch
+    const modeSwitch = document.getElementById('modeSwitch');
+    const body = document.body;
+
+    modeSwitch.addEventListener('click', () => {
+        body.classList.toggle('dark-mode');
+    });
+
+    // Language Switch (You can replace this with your language switch logic)
+    const languageSwitch = document.getElementById('languageSwitch');
+    languageSwitch.addEventListener('click', () => {
+        // Implement your language switch logic here
+        alert('Language switched!');
+    });
+
+</script>
+
+</body>
+</html>
