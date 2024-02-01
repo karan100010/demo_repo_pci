@@ -79,14 +79,13 @@ if (isset($_GET['button'])) {
 
         <!-- Latest Uploads Section -->
         <div class="video-section-1">
-            <h2>Latest Uploads</h2>
+            <h2>महत्वपूर्ण जानकारी</h2>
             <ul>
-                <li><h4>Best way to develop UI.</h4> </li>
-                <li><h4>How to dwonload Python version3 in CentOs7.</h4></li>
-                <li><h4>Learn about Git.</h4> </li>
-                <li><h4>Edit videos from Premier Pro 2024.</h4></li>
-                <li><h4>Know about Gramrite Tech Soluction.</h4> </li>
-                <li><h4>How to dwonload Python version3 in CentOs7.</h4></li>
+                <li><h4>सरकारी नौकरियों के लिए आवेदन करने के बारे में स्थानीय सीएससी केंद्र के माध्यम से जानकारी लें।</h4></li>
+                <li><h4>किसान संबंधित योजनाओं के बारे में जानें।</h4></li>
+                <li><h4>प्रीमियर प्रो 2024 से वीडियो संपादित करें।</h4></li>
+                <li><h4>ग्रामराइट टेक सॉल्यूशन के बारे में जानें।</h4></li>
+               
                 <!-- <li><h4>Best way to learn to develop UI.</h4> </li> -->
                 
                 <!-- Add more items as needed -->
@@ -98,7 +97,7 @@ if (isset($_GET['button'])) {
 
         <!-- Trending Section -->
         <div class="video-section-2">
-            <h2>Trending Videos</h2>
+            <h2>लोकप्रिय वीडियो</h2>
             <div class="video-container">
                 <iframe src="videos\Learn_How to Use Fire Extinguisher_.mp4" frameborder="0" allowfullscreen></iframe>
             </div>
